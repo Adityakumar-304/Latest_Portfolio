@@ -25,7 +25,7 @@ function sendEmail(event) {
   const body = encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`
   );
-  const mailtoLink = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+  const mailtoLink = `mailto:adityakumar22122004@gmail.com?subject=${subject}&body=${body}`;
 
   // Open the mailto link to trigger the email client
   window.location.href = mailtoLink;

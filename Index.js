@@ -9,6 +9,21 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+/* internship read more button*/
+// Read More toggle with smooth animation
+document.querySelector('.toggle-btn').addEventListener('click', function () {
+  const fullDesc = document.querySelector('.full-desc');
+
+  if (fullDesc.style.display === "block") {
+    fullDesc.style.display = "none";
+    this.textContent = "Read More";
+  } else {
+    fullDesc.style.display = "block";
+    this.textContent = "Read Less";
+  }
+});
+
+
 
 //contact form
 function sendEmail(event) {
@@ -30,4 +45,5 @@ function sendEmail(event) {
   // Open the mailto link to trigger the email client
   window.location.href = mailtoLink;
 }
+
 
